@@ -1,16 +1,14 @@
 {
   "name": "user-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple user manager for the people.",
   "main": "index.js",
-
   "engines": {
     "node": ">=7.0.0"
   },
   "scripts": {
     "test": "node --harmony --trace-warnings test.js"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fantasyui-com/user-manager.git"
