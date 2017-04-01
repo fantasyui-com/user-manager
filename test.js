@@ -2,10 +2,15 @@
 const UserManager = require('./index.js');
 
 const myApp = async function() {
+  const userManager = new UserManager({storeLocation: '~/Tests/user-manager-store/',});
+
+  if(await userManager.userExists('alice')) {
+    console.log('Alice did exist and was removed.')
+    await userManager.userDel('alice');
+  }
 
   console.log('\n\nAdd Test (adding alice)')
-  const userManager = new UserManager({storeLocation: '~/Tests/user-manager-store/',});
-  await userManager.userDel('alice');
+
   await userManager.userAdd('alice', {password:'hunter2', notes:[`${new Date()}: Account Creation`]});
   console.log(await userManager.userGet('alice'));
 

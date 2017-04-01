@@ -16,6 +16,15 @@ class UserManager {
      let userObject = await store.getObject(_id);
      return userObject;
    }
+   async userExists (_id){
+     try {
+       let store = await objectStore.createStore(this.options.storeLocation);
+       let userObject = await store.getObject(_id);
+       return true;
+     } catch(err){
+       return false;
+     }
+   }
    async userSet (data){
      let store = await objectStore.createStore(this.options.storeLocation);
      await store.upsertObject(data);
