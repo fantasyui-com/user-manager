@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/fantasyui-com/user-manager#readme",
   "dependencies": {
-    "multiprocess-store": "^1.1.6"
+    "multiprocess-store": "^1.3.0"
   }
 }
