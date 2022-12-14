@@ -1,6 +1,6 @@
 {
   "name": "user-manager",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "description": "Simple user manager for the people.",
   "main": "index.js",
   "engines": {
